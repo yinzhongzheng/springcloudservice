@@ -4,7 +4,7 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloudservice-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloudservice-consumer-dept-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudservice-eureka-7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloudservice-provider-dept-8001" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springcloudserviceconsumerdept80" charset="UTF-8" />
   </component>
 </project>

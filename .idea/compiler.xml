@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springcloudservice-api" />
         <module name="springcloudservice-consumer-dept-80" />
+        <module name="springcloudservice-eureka-7001" />
         <module name="springcloudservice-provider-dept-8001" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="springcloudservice" target="1.8" />
       <module name="springcloudservice-api" target="1.8" />
       <module name="springcloudservice-consumer-dept-80" target="1.8" />
+      <module name="springcloudservice-eureka-7001" target="1.8" />
       <module name="springcloudservice-provider-dept-8001" target="1.8" />
       <module name="springcloudserviceconsumerdept80" target="1.8" />
     </bytecodeTargetLevel>
