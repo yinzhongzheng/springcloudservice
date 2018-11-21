@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloudservice-api" />
+        <module name="springcloudservice-consumer-dept-80" />
+        <module name="springcloudservice-provider-dept-8001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloudservice" target="1.8" />
+      <module name="springcloudservice-api" target="1.8" />
+      <module name="springcloudservice-consumer-dept-80" target="1.8" />
+      <module name="springcloudservice-provider-dept-8001" target="1.8" />
+      <module name="springcloudserviceconsumerdept80" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

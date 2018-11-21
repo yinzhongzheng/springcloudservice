@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yzz.cloud.dao.IDeptDao">
+
+    <select id="getOneDept" resultType="Dept" parameterType="Long">
+      select deptno,dname,db_source dbSource from dept where deptno=#{deptno};
+    </select>
+
+    <select id="getDepts" resultType="Dept">
+        select deptno,dname,db_source dbSource from dept;
+    </select>
+
+    <delete id="removeDept" parameterType="Long">
+        DELETE FROM dept WHERE deptno=#{deptno};
+    </delete>
+
+    <insert id="addDept" parameterType="Dept">
+        INSERT INTO dept
+        SET dname = #{dName},db_source = DATABASE();
+    </insert>
+
+</mapper>
+
+
