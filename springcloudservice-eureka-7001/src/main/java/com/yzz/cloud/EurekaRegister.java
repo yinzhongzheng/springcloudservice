@@ -2,20 +2,19 @@ package com.yzz.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * author:yzz
- * date:2018/11/21
+ * date:1980/11/22
  * E-mail:yzzstyle@163.com
  * com.yzz.cloud
  * 注释:
  */
 @SpringBootApplication
-@EnableEurekaClient
-public class DeptProvider_8001 {
-
+@EnableEurekaServer
+public class EurekaRegister {
     public static void main(String[] args) {
-        SpringApplication.run(DeptProvider_8001.class,args);
+        SpringApplication.run(EurekaRegister.class,args);
     }
 }
