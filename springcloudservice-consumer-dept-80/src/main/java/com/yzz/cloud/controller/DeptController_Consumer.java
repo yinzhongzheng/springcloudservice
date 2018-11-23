@@ -23,17 +23,19 @@ public class DeptController_Consumer {
 
     public static final String URL = "http://localhost:8001/dept/";
 
+    public static final String EUREKA_URL = "http://springcloudservice-dept/";
+
     @Autowired
     RestTemplate restTemplate;
 
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public Object getDept(@PathVariable long id){
-        Dept dept = restTemplate.getForObject(URL+id,Dept.class);
+        Dept dept = restTemplate.getForObject(EUREKA_URL+"dept/"+id,Dept.class);
         return dept;
     }
 
     @RequestMapping(method = RequestMethod.GET)
     public Object getDepts(){
-        return restTemplate.getForEntity(URL,List.class);
+        return restTemplate.getForEntity(EUREKA_URL+"dept",List.class);
     }
 }

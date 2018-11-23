@@ -2,6 +2,7 @@ package com.yzz.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * author:yzz
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 注释:
  */
 @SpringBootApplication
+@EnableEurekaClient
 public class DeptConsumer80_App {
 
     public static void main(String[] args) {

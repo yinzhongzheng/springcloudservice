@@ -81,4 +81,14 @@
         <module>springcloudservice-consumer-dept-80</module>
         <module>springcloudservice-eureka-7001</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

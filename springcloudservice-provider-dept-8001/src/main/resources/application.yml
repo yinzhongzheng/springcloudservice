@@ -26,7 +26,18 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka.registry7001.com:7011/eureka,http://eureka.registry7002.com:7022/eureka,http://eureka.registry7003.com:7033/eureka
+  instance:
+    instance-id: springcloudservice-provider-dept-8001
+    prefer-ip-address: true
+
+info:
+  app.name: springcloudservice-provider-dept-8001
+  company: www.yzz.io
+management:
+  security:
+    enabled: false
+
 
 
 

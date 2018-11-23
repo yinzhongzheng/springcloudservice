@@ -1,0 +1,8 @@
+server:
+  port: 7011
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.registry7002.com:7022/eureka/,http://eureka.registry7003.com:7033/eureka/
+  instance:
+    hostname: eureka.registry7001.com
